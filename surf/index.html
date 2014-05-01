@@ -10,7 +10,7 @@
 			var height = $('#yr').hide().height();
 			var refreshId = setInterval(function() {
 				d = new Date();
-				$('#webcam').attr('src', 'webcam.jpg?'+d.getTime());
+				$('#webcam').attr('src', 'http://laukvik-lofoten.no/webcamera.jpg?'+d.getTime());
 			}, 10000);
 			$('#toggle-yr').click(function() {
 				$('#yr').slideToggle(400);
