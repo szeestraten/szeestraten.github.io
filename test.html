@@ -67,24 +67,17 @@
 		font-weight: normal;
 	}
 
-	#links ul {
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-	}
-
-	#links li {
-		float: left;
+	ul {
 		list-style: none;
+		display: block;
 	}
 
-	#links li a {
-		display: block;
-		margin: 0 10px;
+	li {
+		margin: 0 .25em .75em 0;
 	}
-	
+
 	@media (min-width: 320px) { h1 { letter-spacing: 3px; }	}
-	@media (min-width: 480px) {	h1 { font-size: 3em; } }
+	@media (min-width: 480px) {	h1 { font-size: 3em; } li {	display: inline; } li.slash:after { content:"/"; } }
 	@media (min-width: 640px) {	h1 { font-size: 4em; } }
 
 	</style>
@@ -94,22 +87,15 @@
 	<div class="splash">
 		<h1 alt="zeestrataca">Zee<span class="dot"></span>strata<span class="dot"></span>ca</h1>
 		<h2>Sandor Zeestraten, a dutchman living in Trondheim, Norway, who messes around with web stuff.</h2>
-		<div id="links">
 		<ul>
-			<li>
-				<a class="mail" title="sandor@zeestrataca.com" href="mailto:sandor@zeestrataca.com">Mail</a>
-			</li>
-			<li>
-				<a class="twitter" title="@szeestraten" href="http://twitter.com/szeestraten">Twitter</a>
-			</li>
-			<li>
-				<a class="linkedin" title="LinkedIn" href="http://www.linkedin.com/in/szeestraten">Linked<span>In</span></a>
-			</li>
-			<li>
-				<a class="github" title="GitHub" href="http://github.com/szeestraten">GitHub</a> 
-			</li>
+			<li><a class="mail" title="sandor@zeestrataca.com" href="mailto:sandor@zeestrataca.com">Mail</a></li>
+			<li class="slash"></li>
+			<li><a class="twitter" title="@szeestraten" href="http://twitter.com/szeestraten">Twitter</a></li>
+			<li class="slash"></li>
+			<li><a class="github" title="GitHub" href="http://github.com/szeestraten">GitHub</a></li>
+			<li class="slash"></li>
+			<li><a class="linkedin" title="LinkedIn" href="http://www.linkedin.com/in/szeestraten">Linked<span>In</span></a></li>
 		</ul>
-		</div>
 	</div>
 </div>
 </body>
