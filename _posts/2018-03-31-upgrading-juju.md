@@ -82,7 +82,7 @@ Upgrading the model with `juju upgrade-juju --model openstack --agent-version 2.
 To be fair to the Juju team, our production model has a decent amount of different charms and therefore a decent amount of Juju agents ([we are talking about OpenStack after all](https://checknotes.files.wordpress.com/2016/01/openstack-logical-arch-folsom.png?w=1280)).
 
 Now you might rightfully ask, _Sandor, why on earth didn't you just upgrade the model right away as described in step 3?_
-Well, I simply became a bit wary of proceeding without any easy way to rollback after running into all the previous bugs.
+Well, I simply became a bit wary of proceeding without any easy way to rollback after running into all the previous bugs where things got stuck.
 
 ## Lessons learned
 
