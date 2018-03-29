@@ -1,9 +1,10 @@
 ---
 title:  "Upgrading Juju"
 excerpt: "Experiences upgrading highly available Juju environments from 2.1 to 2.3" 
+categories:
+  - post
 tags:
   - juju
-classes: wide
 ---
 
 I recently spent some time upgrading our Juju environments from 2.1 to 2.3. Below are a few lessons learned aimed at other Juju enthusiasts doing the same experiment.
