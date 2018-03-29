@@ -89,7 +89,7 @@ Well, I simply became a bit wary of proceeding without any easy way to rollback 
 * Always read the changelogs. Carefully.
 * Always test the upgrades. This goes both for users and the dev team.
 * The upgrade UX has room for improvements when offering `apt upgrade juju`, `juju upgrade-juju --model controller`, `juju upgrade-juju --model model`, `juju upgrade-charm` and `juju upgrade-gui`.
-* As things can go awry, it would be nice if `juju upgrade-juju` would tell you what it is going to do with the `--dry-run` flag as it may not pick the version you want.
+* As things can go awry, it would be nice if `juju upgrade-juju` would tell you what it will do without the `--dry-run` flag as it may not pick the version you want.
 * It would also be nice if there was a way to do proper dry runs or even rollback (both failed and successful) upgrades besides backing up and restoring your controllers.
 * Even though the controller and the model are upgraded separately and should be able to run different versions, they can break each other.
 
