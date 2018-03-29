@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zeestrataca - Sandor Zeestraten, a guy who enjoys tinkering around with software, technology and a bit of design." />
-  <title>Zeestrataca / Sandor Zeestraten / 404 Page Not Found</title>
+  <meta name="google-site-verification" content="Yum9cPv-JytrBIhMFg4e_Pz2JYqRBDvvHeewTUsrRKg" />
+  <meta name="description" content="Zeestrataca / Sandor Zeestraten, a guy who enjoys tinkering around with computers." />
+  <title>Zeestrataca / Sandor Zeestraten / Computer tinkering and stuff</title>
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
   <link type="image/ico" rel="shortcut icon" href="favicon.ico" />
+
   <style>
   html, button, input, select, textarea, .pure-g[class *="pure-u"], .pure-g-r[class *="pure-u"] {
     font-family: Georgia, Times, "Times New Roman", serif;
@@ -105,8 +107,8 @@
 </head>
 
 <body>
-  <h1 alt="404 Page Not Found">404<span class="dot"></span>Page Not Found</h1>
-  <h2><a title="Zeestrataca.com" href="/">Click here</a> to go to the homepage <a title="Zeestrataca.com" href="/">zeestrataca.com</a>, or just go to these places:</h2>
+  <h1 alt="zeestrataca">Zee<span class="dot"></span>strata<span class="dot"></span>ca</h1>
+  <h2>Sandor Zeestraten, a dutchman living in Trondheim, Norway, who messes around with computer stuff.</h2>
   <ul>
     <li><a class="mail" title="sandor@zeestrataca.com" href="mailto:sandor@zeestrataca.com">Mail</a>
     </li>
