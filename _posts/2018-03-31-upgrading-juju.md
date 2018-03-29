@@ -1,8 +1,6 @@
 ---
 title:  "Upgrading Juju"
 excerpt: "Experiences upgrading highly available Juju environments from 2.1 to 2.3" 
-categories:
-  - post
 tags:
   - juju
 ---
