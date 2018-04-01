@@ -11,7 +11,7 @@ I recently spent some time upgrading our Juju environments from 2.1 to 2.3. Belo
 
 First, [Juju](https://jujucharms.com) is a cool controller and agent based tool from Canonical to easily deploy and manage applications (called Charms) on different clouds and environments (see [how it works](https://jujucharms.com/how-it-works) for more details).
 
-We run an academic cloud, [HUNT Cloud](https://www.ntnu.edu/huntgenes/hunt-cloud), where we utilize a highly available Juju deployment, in concert with [MAAS](https://maas.io), to run things like [OpenStack](https://www.openstack.org) and [Ceph](https://ceph.com). For this upgrade, we were looking forward to some of the new features in the such as cross model relations and overlay bundles.
+We run an academic cloud, [HUNT Cloud](https://www.ntnu.edu/huntgenes/hunt-cloud), where we utilize a highly available Juju deployment, in concert with [MAAS](https://maas.io), to run things like [OpenStack](https://www.openstack.org) and [Ceph](https://ceph.com). For this upgrade, we were looking forward to some of the new features such as cross model relations and overlay bundles.
 
 ## How to upgrade Juju (for dummies)
 
