@@ -340,7 +340,7 @@ There are a couple of different ways to go depending on how many new OSDs you ha
 The main point is that you want to increment the weight of the OSDs in small steps in order to control the amount of backfilling Ceph will have to do.
 As with all things Ceph, this will of course depend on your cluster so I highly recommended you try these things in a staging cluster and start small.
 
-For our test, let's use the `reweight-subtree` command with and weight of `0.01` so we can reweight all the OSDs of the new Ceph OSD host:
+For our test, let's use the `reweight-subtree` command with a weight of `0.01` so we can reweight all the OSDs of the new Ceph OSD host:
 
 ```shell
 $ ceph osd crush reweight-subtree juju-07321b-4 0.01
