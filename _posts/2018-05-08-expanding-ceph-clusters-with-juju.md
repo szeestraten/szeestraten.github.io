@@ -6,7 +6,6 @@ categories:
 tags:
   - juju
   - ceph
-toc: true
 ---
 
 We just got a set of new SuperMicro servers for one of our Ceph clusters at [HUNT Cloud](https://www.ntnu.edu/huntgenes/hunt-cloud).
@@ -31,7 +30,7 @@ The first step is to get a Juju controller up and running so you can deploy Ceph
 If you're new to Juju and LXD, you can get started with the official docs [here](https://jujucharms.com/docs/stable/tut-lxd).
 In case you already have installed all the requirements, you can simply bootstrap a new controller like so:
 
-```shell
+```
 $ juju bootstrap localhost
 
 Creating Juju controller "localhost-localhost" on localhost/localhost
@@ -60,7 +59,7 @@ Here's a bundle called [`ceph-lxd`](https://jujucharms.com/u/szeestraten/ceph-lx
 
 You can deploy it straight from the Juju charm store:
 
-```shell
+```
 $ juju deploy cs:~szeestraten/bundle/ceph-lxd
 
 Located bundle "cs:~szeestraten/bundle/ceph-lxd-1"
@@ -203,7 +202,7 @@ $ ceph status
 Finally, let's take a look at `ceph osd tree` which prints out a tree of all the OSDs according to their position in the CRUSH map.
 Pay particular attention to the `WEIGHT` column as we will be manipulating these values for the new OSDs when you expand the cluster later.
 
-```shell
+```
 $ ceph osd tree
 ID CLASS WEIGHT  TYPE NAME              STATUS REWEIGHT PRI-AFF
 -1       0.23662 root default
@@ -287,7 +286,7 @@ ceph-mon:osd       ceph-osd:mon  ceph-osd   regular
 
 Note that the new host and OSDs should get a weight of 0 in the CRUSH tree (here represented by `juju-07321b-4` and `osd.9`, `osd.10` and `osd.11`).
 
-```shell
+```
 $ ceph osd tree
 ID CLASS WEIGHT  TYPE NAME              STATUS REWEIGHT PRI-AFF
 -1       0.23662 root default
@@ -350,7 +349,7 @@ reweighted subtree id -9 name 'juju-07321b-4' to 0.01 in crush map
 
 While Ceph is working, keep an eye on the CRUSH tree and the disk usage with this command:
 
-```shell
+```
 $ ceph osd df tree
 ID CLASS WEIGHT  REWEIGHT SIZE   USE    AVAIL  %USE VAR  PGS TYPE NAME
 -1       0.26660        -   316G 10012M   306G 3.09 1.00   - root default
@@ -380,7 +379,7 @@ Again, for real clusters, reweighting in multiple small steps is what will take 
 
 To keep this short, let's reweight the OSDs again, this time directly to the target weight of the original OSDs:
 
-```shell
+```
 $ ceph osd crush reweight-subtree juju-07321b-4 0.026299
 reweighted subtree id -9 name 'juju-07321b-4' to 0.026299 in crush map
 
