@@ -333,7 +333,7 @@ There are a couple of different ways to go depending on how many new OSDs you ha
 * Reweight subtrees [`ceph osd crush reweight-subtree <name> <weight>`](http://docs.ceph.com/docs/master/man/8/ceph/#commands)
   * Good for larger amount of OSDs under a bucket (such as `host`, `chassis`, `rack` etc.)
 * Gently reweight a list of OSDs with [`ceph-gentle-reweight`](https://github.com/cernceph/ceph-scripts/blob/master/tools/ceph-gentle-reweight), a tool from the folks at CERN
-  * Good for gradually adding/removing a list of OSDs and you want limit disruption by monitoring latency and backfilling
+  * Good for gradually adding/removing a list of OSDs and want to limit disruption by monitoring latency and backfilling
 * [Manually editing the CRUSH map](http://docs.ceph.com/docs/master/rados/operations/crush-map-edits/)
   * Good for manually controlling the CRUSH map with automation, version control etc.
 
