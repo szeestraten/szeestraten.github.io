@@ -223,7 +223,7 @@ ID CLASS WEIGHT  TYPE NAME              STATUS REWEIGHT PRI-AFF
 Don't worry if you don't end up with the exact weight or usage numbers as above.
 Those numbers depend on the size of storage available on the LXD host.
 
-So, with a working Ceph cluster, let's get start the expansion process.
+So, with a working Ceph cluster, we can finally get started.
 
 ## Set crush initial weight to 0
 
@@ -246,7 +246,7 @@ juju config ceph-osd crush-initial-weight=0
 ## Add new OSDs to the cluster
 
 Juju makes adding new Ceph OSD hosts a breeze.
-You simply tell it to add another `ceph-osd` unit and it will take care of the rest.
+You simply tell it to add another `ceph-osd` unit and it will take care of the rest:
 
 ```shell
 juju add-unit ceph-osd
